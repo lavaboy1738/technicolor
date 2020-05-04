@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.container{
+    position: absolute;
+    width: 504px;
+    top: calc(50% - 302px);
+    left: calc(50% - 252px);
+}
+
+.title{
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.technicolor{
+    display: flex;
+    flex-wrap: wrap;
+    height: 504px;
+    width: 504px;
+    border: 2px solid black;
+}
+
+.instruction{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.block{
+    width: 25px;
+    height: 25px;
+}
+
+.resetBtn{
+    cursor: pointer;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: 2px solid black;
+    width: 80px;
+    height: 30px;
+}
+
+.resetBtn:hover{
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+a{
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: black;
+}
