@@ -11,20 +11,17 @@ const App = (()=>{
         e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     }
 
-    const blockListner = (item) =>{
-        item.addEventListener("mouseover", setRandomColor)
-    }
-
-    const resetColor = (element) =>{
-        element.style.backgroundColor = "white";
-    }
-
     const resetAll = () =>{
-        blocks.forEach(resetColor);
+        blocks.forEach((element) =>{
+            element.style.backgroundColor = "white";
+        });
     }
 
     const listeners = () =>{
-        blocks.forEach(blockListner)
+        blocks.forEach((element) =>{
+            element.addEventListener("mouseover", setRandomColor)
+        })
+
         resetBtn.addEventListener("click", resetAll)
     }
 
