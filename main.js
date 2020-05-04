@@ -1,8 +1,6 @@
 const App = (()=>{
     const blocks = document.querySelectorAll(".block");
     const resetBtn = document.querySelector(".resetBtn");
-    const theBox = document.querySelector(".technicolor");
-    const instruction = document.querySelector(".instruction");
 
     const setRandomColor = (e) =>{
         const r = Math.floor(Math.random()*256)
