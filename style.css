@@ -8,7 +8,7 @@
 .container{
     position: absolute;
     width: 504px;
-    top: calc(50% - 302px);
+    top: calc(50% - 332px);
     left: calc(50% - 252px);
 }
 
@@ -19,6 +19,7 @@
 }
 
 .technicolor{
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     height: 504px;
@@ -37,18 +38,22 @@
     height: 25px;
 }
 
-.resetBtn{
+.buttons{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
     cursor: pointer;
     font-size: 20px;
-    display: block;
-    margin: 0 auto;
     outline: none;
     border: 2px solid black;
-    width: 80px;
+    width: 120px;
     height: 30px;
 }
 
-.resetBtn:hover{
+.btn:hover{
     -moz-transform: scale(1, -1);
     -webkit-transform: scale(1, -1);
     -o-transform: scale(1, -1);
